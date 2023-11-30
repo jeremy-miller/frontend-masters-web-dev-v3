@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.story-1 {
+  grid-area: story-1;
+}
+
+.story-2 {
+  grid-area: story-2;
+}
+
+.story-3 {
+  grid-area: story-3;
+}
+
+.story-4 {
+  grid-area: story-4;
+}
+
+.story-5 {
+  grid-area: story-5;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "header  header  header"
+    "nav     nav     nav"
+    "story-1 story-2 story-3"
+    "story-4 story-5 story-5";
+}
+
+header {
+  text-align: center;
+}
+
+.page-header {
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.nav-links {
+  border: 3px solid black;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 0px 30px 0px;
+  margin: 0;
+}
+
+.site-section-link {
+  color: #666666;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.site-section-link:hover {
+  text-decoration: underline;
+}
+
+.story {
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.story-3,
+.story-5 {
+  border-right: 3px solid black;
+}
+
+.story-title {
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 30px;
+}
+
+.story-text {
+  padding: 0px 10px 10px 10px;
+}
+
+.story-image {
+  display: block;
+  margin: 0 auto;
+  max-height: 250px;
+}

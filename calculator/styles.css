@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 400px;
+  font-size: 0; /* remove space between buttons, since they're display:inline-block by default */
+}
+
+.screen {
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+  padding: 20px 5px;
+}
+
+.button {
+  background-color: #d8d9db;
+  color: black;
+  font-size: 40px;
+  border: 0;
+  height: 100px;
+  width: 25%;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.button:hover {
+  background-color: #ebebeb;
+}
+
+.button:active {
+  background-color: #bbbcbe;
+}
+
+.operator {
+  background-color: #df974c;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #dfb07e;
+}
+
+.operator:active {
+  background-color: #dd8d37;
+}
+
+.clear {
+  width: 50%;
+}
+
+.zero {
+  width: 75%;
+  border-bottom: 0;
+}
+
+.equal {
+  border-bottom: 0;
+}
